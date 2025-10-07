@@ -104,8 +104,6 @@ const allowedOrigins = [
 ### Database Connection
 - Make sure your MongoDB Atlas cluster allows connections from anywhere (0.0.0.0/0)
 - Or add Vercel's IP ranges to your MongoDB Atlas whitelist
-- **Important**: Your MongoDB connection string should include `retryWrites=true` and `w=majority`
-- Example: `mongodb+srv://username:password@cluster.mongodb.net/database?retryWrites=true&w=majority`
 
 ### CORS Configuration
 - Update the `allowedOrigins` array in `src/app.js` with your actual frontend domains

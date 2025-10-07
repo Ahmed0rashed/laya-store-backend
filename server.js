@@ -11,13 +11,7 @@ process.on('uncaughtException', (err) => {
 });
 
 // Connect to database
-connectDB().catch(err => {
-  console.error('Failed to connect to database:', err);
-  // In serverless, don't exit the process
-  if (process.env.NODE_ENV !== 'production') {
-    process.exit(1);
-  }
-});
+connectDB();
 
 // Start server
 const port = process.env.PORT || 3000;

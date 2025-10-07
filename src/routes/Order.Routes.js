@@ -1,3 +1,4 @@
+// do this file
 const express = require('express');
 const OrderController = require('../controllers/Order.Controller');
 // const { protect } = require('../middlewares/auth');
@@ -5,7 +6,6 @@ const OrderController = require('../controllers/Order.Controller');
 const router = express.Router();
 
 
-// Order routes
 router.post('/createOrder', OrderController.createOrder);
 
 module.exports = router;
