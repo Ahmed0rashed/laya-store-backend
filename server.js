@@ -1,13 +1,4 @@
-// Load environment variables
 require('dotenv').config({ path: './config.env' });
-
-// Debug: Log environment variables (remove in production)
-console.log('=== Environment Variables Check ===');
-console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('MONGODB_URI exists:', !!process.env.MONGODB_URI);
-console.log('PORT:', process.env.PORT);
-console.log('JWT_SECRET exists:', !!process.env.JWT_SECRET);
-console.log('===================================');
 
 const app = require('./src/app');
 const connectDB = require('./src/config/database');
@@ -46,4 +37,3 @@ process.on('SIGTERM', () => {
     console.log(' Process terminated!');
   });
 });
-
