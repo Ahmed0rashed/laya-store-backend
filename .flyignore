@@ -1,0 +1,33 @@
+# Fly.io ignore file - files to exclude from deployment
+
+# Dependencies
+node_modules
+
+# Git
+.git
+
+# Environment files (use secrets instead)
+.env
+.env.local
+.env.*.local
+config.env
+
+# IDE
+.vscode
+.idea
+
+# Logs
+*.log
+logs
+
+# Testing
+coverage
+.nyc_output
+src/tests
+
+# Documentation
+*.md
+
+# Docker
+docker-compose.yml
+

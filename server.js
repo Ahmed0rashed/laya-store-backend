@@ -14,7 +14,7 @@ process.on('uncaughtException', (err) => {
 connectDB();
 
 // Start server
-const port = process.env.PORT || 9100;
+const port = process.env.PORT || 8080;
 const env = process.env.NODE_ENV || 'development';
 
 const server = app.listen(port, () => {
